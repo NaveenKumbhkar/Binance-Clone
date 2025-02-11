@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>BinanceClone.com</title>
+</head>
+
+<body class="scroll-smooth">
+    <div class="mainBody md:block bg-white dark:bg-[#181A20] overflow-x-hidden">
+        <nav class="w-full flex items-center fixed bg-white dark:bg-[#181A20]">
+            <div>
+                <a href="#">
+                    <img src="images/logo.png" alt="" width="175" class="pl-6" />
+                </a>
+            </div>
+            <div
+                class="text-[#181A20] dark:text-white w-full flex justify-end lg:justify-between font-medium pl-7 mt-1">
+                <div class="hidden lg:flex gap-7">
+                    <div class="hover:text-[#F0B90B]">
+                        <a href="#">Buy Crypto</a>
+                    </div>
+                    <div class="hover:text-[#F0B90B]">
+                        <a href="#">Markets</a>
+                    </div>
+                    <div class="flex gap-1 hover:text-[#F0B90B]">
+                        <a href="#">Trade</a>
+                        <div class="mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="hidden mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-up">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 hover:text-[#F0B90B]">
+                        <a href="#">Futures</a>
+                        <div class="mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="hidden mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-up">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hover:text-[#F0B90B]">
+                        <a href="#">Earn</a>
+                    </div>
+                    <div class="flex gap-1 hover:text-[#F0B90B]">
+                        <a href="#">Square</a>
+                        <div class="mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="hidden mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-up">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 hover:text-[#F0B90B]">
+                        <a href="#">More</a>
+                        <div class="mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="hidden mt-[9px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-up">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex gap-5 pr-5">
+                    <div>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-search mt-2 hover:text-[#F0B90B]">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex gap-2">
+                        <div>
+                            <button class="bg-[#2B3139] text-white px-3 py-1 rounded-md">LogIn</button>
+                        </div>
+                        <div>
+                            <button class="bg-[#fcd535] text-[#14151A] px-3 py-1 rounded-md">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden xl:block">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-download mt-2 hover:text-[#F0B90B]">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hidden xl:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-globe text-white mt-2 hover:text-[#F0B90B]">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 
+                                15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <div class="hidden xl:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                            class="sun feather feather-moon mt-2 hover:text-[#F0B90B]">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                            class="moon feather feather-sun mt-2 hover:text-[#F0B90B]">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="threeDot md:hidden pr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-align-justify hover:text-[#F0B90B] cursor-pointer">
+                        <line x1="21" y1="10" x2="3" y2="10"></line>
+                        <line x1="21" y1="6" x2="3" y2="6"></line>
+                        <line x1="21" y1="14" x2="3" y2="14"></line>
+                        <line x1="21" y1="18" x2="3" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section class="w-full">
+            <div class="w-11/12 max-w-[1248px] mx-auto flex flex-col gap-10 lg:flex-row justify-between mt-20 md:mt-32">
+                <div class="flex flex-col gap-2 lg:justify-between">
+                    <div>
+                        <div
+                            class="w-full md:w-[575px] text-[30px] md:text-[90px] leading-[1.3] md:leading-[1] font-bold mb-6">
+                            <div class="user text-[#F0B90B] text-center md:text-start">246667639</div>
+                            <div class="text-[#181A20] dark:text-white text-center md:text-start">USERS TRUST US</div>
+                            <!--<div class="text-white"></div>  -->
+                        </div>
+                        <div class="flex gap-3">
+                            <input type="text" placeholder="Email/Phone number" class="hidden md:block border border-slate-500 rounded-lg py-3 w-[330px] pl-3 
+                               bg-white dark:bg-[#181A20] font-medium hover:border-yellow-500 transition-all 
+                                duration-200 text-[#181A20] dark:text-white" />
+                            <button class="bg-[#fcd535] mx-auto md:mx-0 rounded-md py-2 md:py-3 px-8 md:px-12">
+                                Get started
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-[#848E9C] hidden md:flex gap-10">
+                        <div class="flex flex-col gap-5">
+                            <div>Or Continue With</div>
+                            <div class="flex gap-6">
+                                <div
+                                    class="border border-gray-300 dark:border-gray-700 rounded-xl p-2 w-[46px] hover:bg-[#d6dadf] dark:hover:bg-[#2B3139] cursor-pointer">
+                                    <img src="images/QR-Code-Image_files/google-icon.png" alt="" width="28" />
+                                </div>
+                                <div
+                                    class="border border-gray-300 dark:border-gray-700 rounded-xl p-2 w-[46px] hover:bg-[#d6dadf] dark:hover:bg-[#2B3139] cursor-pointer">
+                                    <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px" class="fill-[#181A20] dark:fill-white">    <path d="M25.565,9.785c-0.123,0.077-3.051,1.702-3.051,5.305c0.138,4.109,3.695,5.55,3.756,5.55 c-0.061,0.077-0.537,1.963-1.947,3.94C23.204,26.283,21.962,28,20.076,28c-1.794,0-2.438-1.135-4.508-1.135 c-2.223,0-2.852,1.135-4.554,1.135c-1.886,0-3.22-1.809-4.4-3.496c-1.533-2.208-2.836-5.673-2.882-9 c-0.031-1.763,0.307-3.496,1.165-4.968c1.211-2.055,3.373-3.45,5.734-3.496c1.809-0.061,3.419,1.242,4.523,1.242 c1.058,0,3.036-1.242,5.274-1.242C21.394,7.041,23.97,7.332,25.565,9.785z M15.001,6.688c-0.322-1.61,0.567-3.22,1.395-4.247 c1.058-1.242,2.729-2.085,4.17-2.085c0.092,1.61-0.491,3.189-1.533,4.339C18.098,5.937,16.488,6.872,15.001,6.688z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <div>Download App</div>
+                            <div
+                                class="border border-gray-300 dark:border-gray-700 rounded-xl p-2 w-[46px] hover:bg-[#d6dadf] dark:hover:bg-[#2B3139] cursor-pointer">
+                                <svg fill="none" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><g fill="#000" class="fill-[#181A20] dark:fill-white"><path d="m6 6h2v2h-2z"/><path d="m3 11v-8h8v8zm2-6v4h4v-4z"/><path d="m13 13h3v2h-3z"/><path d="m16 15h2v-2h3v3h-3v1h1v1h2v3h-2v-2h-2v2h-4v-4h2v2h1z"/><path d="m18 6h-2v2h2z"/><path d="m13 3v8h8v-8zm6 2v4h-4v-4z"/><path d="m6 16h2v2h-2z"/><path d="m3 21v-8h8v8zm2-6v4h4v-4z"/></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 items-center">
+                    <div class="lg:w-[480px] lg:h-[250px] w-full rounded-2xl md:bg-[#f2f2f2] md:dark:bg-[#1e2329] p-4">
+                        <div class="text-[#848E9C] flex justify-center md:justify-between">
+                            <div class="flex gap-5 font-bold">
+                                <div class="text-[#181A20] dark:text-white">
+                                    <button>Popular</button>
+                                    <div class="h-[3px] w-5 bg-[#fcd535] rounded-2xl mt-2 mx-auto"></div>
+                                </div>
+                                <div>
+                                    <button>New listing</button>
+                                    <div class="h-[3px] w-5 bg-[#fcd535] rounded-2xl mt-2 mx-auto hidden"></div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <button>view all 350+ coins</button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-4">
+                            <div class="flex justify-between">
+                                <div class="flex gap-2 w-[30%]">
+                                    <img src="images/QR-Code-Image_files/87496d50-2408-43e1-ad4c-78b47b448a6a.png"
+                                        alt="" width="28" />
+                                    <p class="text-[#181A20] dark:text-white">
+                                        BTC
+                                        <span class="text-[14px] text-[#848E9C]">Bitcoin</span>
+                                    </p>
+                                </div>
+                                <div class="text-[#181A20] dark:text-white w-[30%] flex justify-end">
+                                    <div>$107128.84</div>
+                                </div>
+                                <div class="text-[#0ECB81]">+3.45%</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2 w-[30%]">
+                                    <img src="images/QR-Code-Image_files/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png"
+                                        alt="" width="28" />
+                                    <p class="text-[#181A20] dark:text-white">
+                                        ETH
+                                        <span class="text-[14px] text-[#848E9C]">Ethereum</span>
+                                    </p>
+                                </div>
+                                <div class="text-[#181A20] dark:text-white w-[30%] flex justify-end">
+                                    <div>$4009.09</div>
+                                </div>
+                                <div class="text-[#0ECB81]">+2.88%</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2 w-[30%]">
+                                    <img src="images/QR-Code-Image_files/94863af2-c980-42cf-a139-7b9f462a36c2.png"
+                                        alt="" width="28" />
+                                    <p class="text-[#181A20] dark:text-white">
+                                        BNB <span class="text-[14px] text-[#848E9C]">BNB</span>
+                                    </p>
+                                </div>
+                                <div class="text-[#181A20] dark:text-white w-[30%] flex justify-end">
+                                    <div>$723.94</div>
+                                </div>
+                                <div class="text-[#0ECB81]">+2.11%</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2 w-[30%]">
+                                    <img src="images/QR-Code-Image_files/4766a9cc-8545-4c2b-bfa4-cad2be91c135.png"
+                                        alt="" width="28" />
+                                    <p class="text-[#181A20] dark:text-white">
+                                        XRP <span class="text-[14px] text-[#848E9C]">XRP</span>
+                                    </p>
+                                </div>
+                                <div class="text-[#181A20] dark:text-white w-[30%] flex justify-end">
+                                    <div>$2.70</div>
+                                </div>
+                                <div class="text-[#F6465D]">-8.52%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[480px] lg:h-[150px] rounded-2xl md:bg-[#f2f2f2] md:dark:bg-[#1e2329] p-4">
+                        <div class="flex justify-center md:justify-between">
+                            <div class="text-[#181A20] dark:text-white font-bold">News</div>
+                            <div class="text-[#848E9C] hidden md:block cursor-pointer">
+                                <p>View All News</p>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="text-[#181A20] dark:text-[#EAECEF] flex flex-col mt-2 gap-2">
+                            <p>Hello everyone I am Naveen Kumbhkar.</p>
+                            <p>This web application clone created by me.</p>
+                            <p>Thank you for visiting it.</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[480px] lg:h-[80px] rounded-2xl md:bg-[#f2f2f2] md:dark:bg-[#1e2329] p-4">
+                        <div class="w-[250px] text-[#181A20] dark:text-white flex gap-5">
+                            <div>Launchpool</div>
+                            <div class="flex gap-2">
+                                <img src="images/QR-Code-Image_files/540c9518-aa2e-4802-b39e-982b261f0c93.png" alt=""
+                                    width="25" />
+                                <p>VANA</p>
+                            </div>
+                            <div class="text-[#0ECB81] text-[13px]">
+                                <p>Ongoing</p>
+                                <!-- icon -->
+                            </div>
+                        </div>
+                        <div class="text-[#181A20] dark:text-white flex gap-4 text-[20px]">
+                            <div>12 <span class="text-[10px]">H</span></div>
+                            <div>18 <span class="text-[10px]">M</span></div>
+                            <div>24 <span class="text-[10px]">S</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full">
+            <div class="md:w-11/12 w-full md:max-w-[1248px] mx-auto py-24 md:mt-12 flex md:gap-[80px]">
+                <div class="md:w-1/2 flex flex-col mx-auto md:justify-between md:items-center">
+                    <div
+                        class="text-[#181A20] dark:text-white w-full text-center md:hidden font-medium text-[25px] leading-[1.1] mb-10">
+                        Trade on the go.Anywhere, anytime.
+                    </div>
+                    <img src="images/mobile-image.svg" alt=""
+                        class="mobile w-[290px] mx-auto md:w-[250px] lg:w-[290px]" />
+                    <img src="images/iphone-image.svg" alt=""
+                        class="iPhone hidden w-[290px] mx-auto md:w-[250px] lg:w-[290px]">
+                    <img src="images/desktop-image.png" alt=""
+                        class="desktop hidden w-[450px] mx-auto md:w-[350px] lg:w-[450px]">
+                    <div>
+                        <div class="flex w-[215px] mx-auto md:px-0 gap-10 text-[#848E9C] text-[18px] font-medium">
+                            <div>
+                                <button class="desktopButton py-5">Desktop</button>
+                                <div class="desktopOutLine h-[3px]  w-16 hidden bg-[#fcd535] rounded-2xl mt-2 mx-auto">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="mobileButton py-5">Lite</button>
+                                <div class="mobileOutLine h-[3px] w-12 bg-[#fcd535] rounded-2xl mt-2 -ml-2 mx-auto">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="iPhoneButton py-5">Pro</button>
+                                <div
+                                    class="iPhoneOutLine h-[3px] w-12 hidden bg-[#fcd535] rounded-2xl mt-2 -ml-2 mx-auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-[1px] w-[230px] bg-[#848E9C] -mt-[1px] rounded-2xl mx-auto"></div>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-col gap-20">
+                    <div class="text-[#181A20] dark:text-white font-medium md:text-[30px] lg:text-[50px] leading-[1.1]">
+                        Trade on the go.Anywhere, anytime.
+                    </div>
+                    <div class="flex flex-col gap-14">
+                        <div class="flex gap-10">
+                            <img src="images/scanerImage.png" alt=""
+                                class="p-4 border rounded-2xl md:w-[150px] lg:w-[220px]" />
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#848E9C] text-[18px]">Scan to Download App</p>
+                                <p class="text-[#181A20] dark:text-white md:text-[18px] lg:text-[25px] font-medium">
+                                    iOS and Android
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-[#181A20] dark:text-white text-[20px] font-medium flex md:gap-10 lg:gap-20">
+                            <div
+                                class="w-[110px] h-[100px] flex flex-col justify-center  hover:bg-[#ced0d3] dark:hover:bg-[#2B3139] cursor-pointer items-center rounded-2xl gap-2 py-3">
+                                <img src="images/QR-Code-Image_files/apple-icon.png" alt="" width="35"
+                                    class="hidden dark:block" />
+                                <img src="images/apple-logo.png" alt="" width="35" class="dark:hidden">
+                                <p>MacOs</p>
+                            </div>
+                            <div
+                                class="w-[110px] h-[100px] flex flex-col justify-center hover:bg-[#ced0d3] dark:hover:bg-[#2B3139] cursor-pointer items-center rounded-2xl gap-1 py-3">
+                                <svg class="bn-svg text-[40px] text-t-primary mobile:text-[32px] tablet:text-[32px]"
+                                    viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 3.895h8.533v8.529H3v-8.53zm9.467 0H21v8.529h-8.533v-8.53zM3 13.362h8.533v8.533H3v-8.533zm9.467 0H21v8.533h-8.533"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <p>Windows</p>
+                            </div>
+                            <div
+                                class="w-[110px] h-[100px] flex flex-col justify-center hover:bg-[#ced0d3] dark:hover:bg-[#2B3139] cursor-pointer items-center rounded-2xl gap-1 py-3">
+                                <svg class="bn-svg text-[40px] text-t-primary mobile:text-[32px] 
+                                    tablet:text-[32px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.578 18.633c-.553-.23-1.015
+                                    -.588-.99-1.267.039-.691-.488-1.139-.488-1.139s.463-1.498.039-2.74c-.424-1.24
+                                    -1.837-3.225-2.917-4.735-1.092-1.51-.167-3.239-1.156-5.453-.99-2.227-3.546-2.087
+                                    -4.92-1.14-1.375.948-.951 3.29-.887 4.404.064 1.114.026 1.894-.103 2.189-.128.281
+                                    -1.015 1.344-1.606 2.214-.59.883-1.015 2.714-1.451 3.456-.424.755-.129 1.434-.129 
+                                    1.434s-.295.102-.527.589c-.23.486-.693.716-1.516.883-.822.166-.822.691-.629 
+                                    1.28.193.589 0 .909-.231 1.664-.232.742.925.973 2.03 1.1 1.117.129 2.363.846 
+                                    3.417.986 1.053.128 1.375-.716 1.375-.716s1.182-.27 2.428-.295a10.117 10.117 
+                                    0 012.428.256s.231.525.655.755c.424.23 1.35.256 1.94-.358.591-.627 2.171-1.408 
+                                    3.058-1.895.899-.499.745-1.241.18-1.472zM12.895 4.246c.565 0 1.015.55 1.015 1.242 
+                                    0 .486-.231.909-.566 1.113l-.27-.115c.206-.102.348-.358.348-.653 0-.384-.245-.704
+                                    -.54-.704-.296 0-.54.32-.54.704 0 .141.039.282.09.397-.18-.064-.334-.128-.462
+                                    -.18a2.24 2.24 0 01-.09-.575c0-.678.462-1.229 1.015-1.229zm-.064 2.611c.282.103.59.282.565.461
+                                    -.039.18-.18.18-.565.41-.386.23-1.208.742-1.478.768-.27.038-.41-.115-.694-.295-.282
+                                    -.179-.809-.614-.68-.844 0 0 .41-.32.59-.474.18-.166.643-.563.925-.512.296.051 
+                                    1.054.384 1.337.486zm-2.544-2.419c.45 0 .81.525.81 1.178 0 .115-.014.23-.04.333a.828.828 
+                                    0 00-.32.192c-.052.038-.103.09-.155.128a.824.824 0 00.065-.512c-.065-.359-.296-.615
+                                    -.527-.576-.231.038-.373.358-.321.716.064.359.295.615.526.576.013 0 .026 0 .039
+                                    -.012a2.978 2.978 0 01-.321.281c-.321-.153-.566-.601-.566-1.126.013-.653.373-1.178.81
+                                    -1.178zm-.86 16.487c-.104.473-.656.806-.656.806-.501.154-1.889-.448-2.518-.704-.63
+                                    -.256-2.236-.346-2.441-.576-.206-.243.103-.755.18-1.254.077-.5-.154-.807-.077-1.152.077
+                                    -.333 1.104-.333 1.49-.576.398-.23.475-.91.784-1.101.32-.18.886.473 1.13.832.231.358 
+                                    1.13 1.933 1.49 2.317.373.422.72.934.617 1.408zm5.806-4.544c-.09.46-.09 2.124-.09 
+                                    2.124s-1.015 1.396-2.595 1.626c-1.58.23-2.364.064-2.364.064l-.886-1.011s.693-.103.59
+                                    -.781c-.102-.678-2.106-1.626-2.466-2.483-.36-.845-.064-2.279.398-3.008.463-.717.758
+                                    -2.279 1.208-2.803.462-.525.822-1.626.655-2.125 0 0 .99 1.177 1.67.985.694-.192 2.236
+                                    -1.33 2.467-1.139.231.192 2.197 4.506 2.39 5.875.192 1.37-.129 2.42-.129 2.42s-.758
+                                    -.205-.848.256zm5.036 3.072c-.308.281-2.017.96-2.53 1.497-.515.525-1.17.96-1.58.832
+                                    -.412-.128-.772-.69-.592-1.497.18-.807.334-1.703.309-2.202-.026-.512-.129-1.19 0
+                                    -1.293.128-.102.333-.051.333-.051s-.102.96.489 1.216c.59.256 1.426-.102 1.683-.358.257
+                                    -.256.436-.628.436-.628s.257.128.232.538c-.026.41.18.986.565 1.19.373.192.964.474.655.756z" fill="currentColor"></path>
+                                </svg>
+                                <p>Linux</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="#" class="mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-download mt-1 text-[#848E9C]">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                        <p
+                            class="text-[#181A20] dark:text-white font-semibold text-[16px] hover:text-[#848E9C] dark:hover:text-[#848E9C] transition-all duration-200 cursor-pointer">
+                            More Download Option
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section class="w-full">
+            <div
+                class="w-11/12 max-w-[1248px] mx-auto mt-8 pb-14 md:pb-32 text-[#181A20] dark:text-white flex flex-col gap-20">
+                <div class="w-full text-center">
+                    <h1 class="text-[30px] md:text-[45px] font-medium">Frequently Asked Questions</h1>
+                </div>
+                <div class="w-full flex flex-col gap-10">
+                    <div class="w-full">
+                        <div class="w-full onHover flex justify-between">
+                            <div
+                                class="questionOne w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    1
+                                </div>
+                                <div>What is a cryptocurrency exchange?</div>
+                            </div>
+                            <div class="plusOne text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseOne bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <p class="answerOne hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            <a href="#" class="text-[#F0B90B]">Cryptocurrency</a> exchanges
+                            are digital marketplaces that enable users to buy and sell
+                            cryptocurrencies like
+                            <a href="#" class="text-[#F0B90B]">Bitcoin</a> ,
+                            <a href="#" class="text-[#F0B90B]">Ethereum</a>, and Tether. The
+                            Binance exchange is the largest crypto exchange by trade volume.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <div class="w-full onHoverTwo flex justify-between">
+                            <div
+                                class="questionTwo w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    2
+                                </div>
+                                <div>What products does Binance provide?</div>
+                            </div>
+                            <div class="plusTwo text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseTwo bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <div class="answerTwo hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            <p>
+                                Binance is the world's leading cryptocurrency exchange,
+                                catering to 235 million registered users in over 180
+                                countries. With low fees and over 350 cryptocurrencies to
+                                trade, Binance is the preferred exchange to trade Bitcoin,
+                                Altcoins, and other virtual assets.
+                            </p>
+                            <br>
+                            <p>With Binance users can:</p>
+                            <ul>
+                                <li>
+                                    Trade hundreds of cryptocurrencies on 
+                                    <a href="#" class="text-[#F0B90B]">Spot</a>, 
+                                    <a href="#" class="text-[#F0B90B]">Margin</a>, and
+                                    <a href="#" class="text-[#F0B90B]">Futures</a> markets.
+                                </li>
+                                <li>Buy and sell cryptocurrencies with <a href="#" class="text-[#F0B90B]">Binance P2P</a>.</li>
+                                <li>Earn interest on your crypto with <a href="#" class="text-[#F0B90B]">Binance Earn</a>.</li>
+                                <li>Buy or earn new tokens on <a href="#" class="text-[#F0B90B]">Binance Launchpad</a>.</li>
+                                <li>
+                                    Trade, stake, and loan NFTs on <a href="#" class="text-[#F0B90B]">Binance NFT</a> marketplace.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="onHoverThree w-full flex justify-between">
+                            <div
+                                class="questionThree w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    3
+                                </div>
+                                <div>
+                                    How to buy Bitcoin and other cryptocurrencies on Binance
+                                </div>
+                            </div>
+                            <div class="plusThree text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseThree bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <p class="answerThree hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            There are several ways to buy cryptocurrencies on Binance. You
+                            can use a credit/debit card, cash balance, or Apple Pay/Google
+                            Pay to <a href="#" class="text-[#F0B90B]">purchase crypto</a> on Binance. Before getting started,
+                            please make sure you’ve completed <a href="#" class="text-[#F0B90B]">Identity Varification</a> for your
+                            Binance account.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <div class="onHoverFour w-full flex justify-between">
+                            <div
+                                class="questionFour w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    4
+                                </div>
+                                <div>How to track cryptocurrency prices</div>
+                            </div>
+                            <div class="plusFour text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseFour bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <p class="answerFour hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            The easiest way to track the latest cryptocurrency prices,
+                            trading volumes, trending altcoins, and market cap is the
+                            <a href="#" class="text-[#F0B90B]">Binance Cryptocurrency Directory</a>. Click on the coins to know
+                            historical coin prices, 24-hour trading volume, and the price of
+                            cryptocurrencies like <a href="#" class="text-[#F0B90B]">Binance</a>, 
+                            <a href="#" class="text-[#F0B90B]">Ethereum</a>, 
+                            <a href="#" class="text-[#F0B90B]">BNB</a> and others in
+                            real-time.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <div class="onHoverFive w-full flex justify-between">
+                            <div
+                                class="questionFive w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    5
+                                </div>
+                                <div>How to trade cryptocurrencies on Binance</div>
+                            </div>
+                            <div class="plusFive text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseFive bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <p class="answerFive hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            You can trade hundreds of cryptocurrencies on Binance via the
+                            <a href="#" class="text-[#F0B90B]">Spot</a>, 
+                            <a href="#" class="text-[#F0B90B]">Margin</a>, 
+                            <a href="#" class="text-[#F0B90B]">Futures</a>, and 
+                            <a href="#" class="text-[#F0B90B]">Options</a> markets. To 
+                            <a href="#" class="text-[#F0B90B]">begin trading</a>,
+                            users need to register an account, complete identity
+                            verification, buy/deposit crypto, and start trading.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <div class="onHoverSix w-full flex justify-between">
+                            <div
+                                class="questionSix w-full h-[34px] text-[18px] md:text-[23px] font-medium cursor-pointer flex gap-3">
+                                <div class="text-[16px] py-1 px-3 w-9 h-9 border rounded-md">
+                                    6
+                                </div>
+                                <div>How to earn from crypto on Binance</div>
+                            </div>
+                            <div class="plusSix text-[30px] pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="mineseSix bg-[#fcd535] rounded-full px-[11px] py-4 cursor-pointer hidden">
+                                <div class="h-[2px] w-3 bg-black my-auto mx-auto"></div>
+                            </div>
+                        </div>
+                        <p class="answerSix hidden mt-5 pl-10 text-[12px] md:text-[18px] text-[#848E9C]">
+                            Users can earn rewards on more than 180+ cryptocurrencies by
+                            using one of the products offered on <a href="#" class="text-[#F0B90B]">Binance Earn</a>. Our platform
+                            offers dozens of digital assets like <a href="#" class="text-[#F0B90B]">Bitcoin</a>, 
+                            <a href="#" class="text-[#F0B90B]">Ethereum</a>, and
+                            stablecoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 4 -->
+        <section class="w-full bg-[#f2f2f2] dark:bg-[#1e2329] pt-2 md:pt-10 pb-2 md:pb-10">
+            <div class="w-[380px] flex flex-col items-center my-5 mx-auto">
+                <div class="text-[18px] md:text-[40px] text-[#181A20] dark:text-white font-medium mb-4 md:mb-8">
+                    Start earning today
+                </div>
+                <button class="bg-[#fcd535] w-36 md:w-40 py-1 pb-2 md:py-3 px-5 rounded-lg font-medium">
+                    Sign Up Now
+                </button>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="w-full">
+            <div class="w-11/12 max-w-[1248px] flex flex-col mx-auto mt-16">
+                <!-- part One -->
+                <div class="flex flex-col-reverse lg:flex-row gap-20">
+                    <!-- left part -->
+                    <div class="flex flex-col text-[#181A20] dark:text-white w-full lg:w-[17%]">
+                        <h3 class="text-[18px] font-medium md:font-bold">Community</h3>
+                        <div class="flex flex-col gap-12 mt-6">
+                            <div class="flex flex-wrap gap-4">
+                                <a href="" class="hover:opacity-75"><img src="images/discordImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/telegramImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/tiktokImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/facebookImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/tiwiterImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/entinaImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/instragramImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/mmmm.png" alt="" width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/youtubeImage.png" alt=""
+                                        width="30" /></a>
+                                <a href="" class="hover:opacity-75"><img src="images/whatsappImage.png" alt=""
+                                        width="30"></a>
+                                <a href="" class="hover:opacity-75"><img src="images/threedotImage.png" alt=""
+                                        width="25" /></a>
+                            </div>
+                            <div class="flex lg:flex-col gap-6 font-bold">
+                                <div class="flex gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-globe text-[#181A20] dark:text-white mt-1">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 
+                                        15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                    <a href="#" class="hover:text-[#F0B90B]">English(India)</a>
+                                </div>
+                                <div class="flex gap-2">
+                                    <div class="rounded-full bg-[#181A20] dark:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="" class="fill-white dark:fill-[#181A20]">
+                                        <path
+                                            d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z" />
+                                    </svg>
+                                    </div>
+                                    <a href="#" class="hover:text-[#F0B90B]">USD-$</a>
+                                </div>
+                                <div class="flex gap-2">
+                                    <div>Theme</div>
+                                    <!-- button -->
+                                    <div class="flex border border-slate-500 rounded-lg">
+                                        <div class="sun2 py-[3px] px-[6px] m-[2px] rounded-l-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" class="feather feather-sun text-[#848E9C] dark:text-white">
+                                                <circle cx="12" cy="12" r="5"></circle>
+                                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="moon2 py-[3px] px-[6px] m-[2px] rounded-r-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" class="feather feather-moon text-[#848E9C]">
+                                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right part -->
+                    <div class="w-full text-[#181A20] dark:text-white flex flex-col md:hidden justify-between gap-5">
+                        <div class="fColOne flex justify-between">
+                            <div class="font-medium">About Us</div>
+                            <div class="fPluse text-[25px] pr-2 -mt-2">+</div>
+                            <div class="fMinse hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3"></div>
+                        </div>
+                        <ul class="fColOneAns hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Announcements</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">News</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Press</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="" class="hover:text-[#F0B90B]">Building Trust</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Community</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Risk Warning</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Notices</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Dounloads</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Desktop application</a>
+                            </li>
+                        </ul>
+                        <div class="fColOne2 flex justify-between">
+                            <div class="font-medium">Products</div>
+                            <div class="fPluse2 text-[25px] pr-2 -mt-2">+</div>
+                            <div class="fMinse2 hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3"></div>
+                        </div>
+                        <ul class="fColOneAns2 hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Exchange</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy Crypto</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Pay</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Academy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Live</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Tex</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Gift Card</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Launchpool</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Auto Invest</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">ETH Staking</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">NFT</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">BABT</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Research</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Charity</a>
+                            </li>
+                        </ul>
+                        <div class="fColOne3 flex justify-between">
+                            <div class="font-medium">Business</div>
+                            <div class="fPluse3 text-[25px] pr-2 -mt-2">+</div>
+                            <div class="fMinse3 hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3"></div>
+                        </div>
+                        <ul class="fColOneAns3 hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">P2P Merchant Application</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">P2Pro Merchant Application</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Listing Application</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Institutional & VIP Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Labs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Binance Connect</a>
+                            </li>
+                        </ul>
+                        <div class="fColOne4 flex justify-between">
+                            <div class="font-medium">Learn</div>
+                            <div class="fPluse4 text-[25px] plus pr-2 -mt-2">+</div>
+                            <div class="fMinse4 hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3"></div>
+                        </div>
+                        <ul class="fColOneAns4 hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Learn & Earn</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Browse Crypto Prices</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Bitcoin Price</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Ethereum Price</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Browse Crypto Price Predictions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Bitcoin Price Predications</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Ethereum Price Prediction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Ethereum Upgrade (Pectra)</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy Bitcoin</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy BNB</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy XRP</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy Dogecoin</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy Ethereum</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Buy Tradable Altcoins</a>
+                            </li>
+                        </ul>
+                        <div class="fColOne5 flex justify-between">
+                            <div class="font-medium">Service</div>
+                            <div class="fPluse5 text-[25px] plus pr-2 -mt-2">+</div>
+                            <div class="fMinse5 hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3"></div>
+                        </div>
+                        <ul class="fColOneAns5 hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Referral</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">OTC Trading</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Historical Market Data</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Proof of Reserves</a>
+                            </li>
+                        </ul>
+                        <div class="fColOne6 flex justify-between">
+                            <div class="font-medium">Support</div>
+                            <div class="fPluse6 text-[25px] plus pr-2 -mt-2 cursor-pointer">+</div>
+                            <div class="fMinse6 hidden h-[1px] w-3 bg-[#181A20] dark:bg-white mr-3 mt-3 cursor-pointer"></div>
+                        </div>
+                        <ul class="fColOneAns6 hidden -mt-2 pl-5 leading-[2] text-[#848E9C]">
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">24/7 Chat Support</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Product Feedback & Suggestions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Fees</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">APIs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Binance Verify</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Trading Rules</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Binance Airdrop Portal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#F0B90B]">Law Enforcement Requests</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden w-full text-[#181A20] dark:text-white md:flex justify-between">
+                        <!-- column one -->
+                        <div>
+                            <div class="text-[18px] font-bold">About Us</div>
+                            <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Announcements</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">News</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-[#F0B90B]">Building Trust</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Risk Warning</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Notices</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Dounloads</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Desktop application</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- colunm two -->
+                        <div>
+                            <div class="text[18px] font-bold">Products</div>
+                            <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Exchange</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Buy Crypto</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Pay</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Academy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Live</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Tex</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Gift Card</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Launchpool</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Auto Invest</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">ETH Staking</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">NFT</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">BABT</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Research</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-[#F0B90B]">Charity</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- column three -->
+                        <div class="flex flex-col gap-12">
+                            <!-- sub column of column three -->
+                            <div>
+                                <div class="text-[18px] font-bold">Business</div>
+                                <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">P2P Merchant Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">P2Pro Merchant Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Listing Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Institutional & VIP Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Labs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Binance Connect</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- subcolumn two of column three -->
+                            <div>
+                                <div class="text-[18px] font-bold">Learn</div>
+                                <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Learn & Earn</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Browse Crypto Prices</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Bitcoin Price</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Ethereum Price</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Browse Crypto Price Predictions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Bitcoin Price Predications</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Ethereum Price Prediction</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Ethereum Upgrade (Pectra)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy Bitcoin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy BNB</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy XRP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy Dogecoin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy Ethereum</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Buy Tradable Altcoins</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- column four -->
+                        <div class="flex flex-col gap-12">
+                            <!-- subcolumn one of column four -->
+                            <div>
+                                <div class="text-[18px] font-bold">Service</div>
+                                <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Affiliate</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Referral</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">OTC Trading</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Historical Market Data</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Proof of Reserves</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- subcolumn two of column four -->
+                            <div>
+                                <div class="text-[18px] font-bold">Support</div>
+                                <ul class="mt-4 leading-[2] font-medium text-[#848E9C]">
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">24/7 Chat Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Support Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Product Feedback & Suggestions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Fees</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">APIs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Binance Verify</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Trading Rules</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Binance Airdrop Portal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-[#F0B90B]">Law Enforcement Requests</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- part second -->
+                <div class="text-[#848E9C] dark:text-white my-16">
+                    <div class="h-[2px] w-full bg-[#1e2329] dark:bg-[#1e2329]"></div>
+                    <div class="w-full flex justify-center items-center gap-6 mt-5">
+                        <div>Binance 2025</div>
+                        <div>
+                            <a href="#" class="hover:text-[#F0B90B]">Cookie Preferences</a>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center items-center mt-5 opacity-70">
+                        Created By Naveen
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="md:hidden hidden closeResult overflow-x-hidden bg-white dark:bg-[#202630]">
+        <div class="w-full h-full flex flex-col">
+            <div class="close w-full dark:text-white pb-5 pt-5 pr-5 flex justify-end">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#FFFFFF" class="fill-[#181A20] dark:fill-[#FFFFFF]">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </div>
+            <div class="flex flex-col gap-8 mx-5">
+                <div class="flex gap-5">
+                    <div class="bg-[#c9d2dd] dark:bg-[#333b47] w-full min-w-[80px] text-center py-2 rounded-lg text-[#181A20] dark:text-white font-medium">
+                        LogIn</div>
+                    <div class="bg-[#fcd535] w-full min-w-[80px] text-center py-2 rounded-lg font-medium">Sign Up</div>
+                </div>
+                <div class="flex py-2 px-4 gap-2 border border-slate-500 rounded-lg w-full 
+                bg-white dark:bg-[#202630] hover:border-yellow-500 transition-all 
+                duration-200 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search text-[#848E9C] mt-1">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Coin, Function, Announcements"
+                        class="border-none bg-white dark:bg-[#202630] w-full text-[15px]">
+                </div>
+            </div>
+            <div class="flex flex-col text-[#181A20] dark:text-white">
+                <div class="flex gap-2 py-4 mt-5 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <div class="bg-[#d2d7e0] dark:bg-[#5E6673] group-hover:bg-[#181A20] dark:group-hover:bg-white rounded-full px-[2px] pt-[1px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                            fill="#1e2329" class="fill-white dark:fill-[#1e2329]">
+                            <path
+                                d="M360-120v-80H240v-80h80v-400h-80v-80h120v-80h80v80h80v-80h80v85q52 14 86 56.5t34 98.5q0 29-10 55.5T682-497q35 21 56.5 57t21.5 80q0 66-47 113t-113 47v80h-80v-80h-80v80h-80Zm40-400h160q33 0 56.5-23.5T640-600q0-33-23.5-56.5T560-680H400v160Zm0 240h200q33 0 56.5-23.5T680-360q0-33-23.5-56.5T600-440H400v160Z" />
+                        </svg>
+                    </div>
+                    <div>Buy Crypto</div>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                        <path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z" />
+                    </svg>
+                    <div>Markets</div>
+                </div>
+                <div class="flex justify-between py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] group">
+                    <div class="flex gap-2">
+                        <!--icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                            <path
+                                d="M120-160v-80h110l-16-14q-52-46-73-105t-21-119q0-111 66.5-197.5T360-790v84q-72 26-116 88.5T200-478q0 45 17 87.5t53 78.5l10 10v-98h80v240H120Zm717-360h-81q-5-35-21.5-67T690-648l-10-10v98h-80v-240h240v80H730l16 14q41 42 63 89t28 97ZM680-40l-12-60q-12-5-22.5-10.5T624-124l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T668-380l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T772-100l-12 60h-80Zm40-120q33 0 56.5-23.5T800-240q0-33-23.5-56.5T720-320q-33 0-56.5 23.5T640-240q0 33 23.5 56.5T720-160Z" />
+                        </svg>
+                        <div>Trade</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-down text-[#181A20] dark:text-white mr-5 mt-1">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="flex justify-between py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] group">
+                    <div class="flex gap-2">
+                        <!--icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                            <path
+                                d="M200-800v241-1 400-640 200-200Zm80 400h140q9-23 22-43t30-37H280v80Zm0 160h127q-5-20-6.5-40t.5-40H280v80ZM200-80q-33 0-56.5-23.5T120-160v-640q0-33 23.5-56.5T200-880h320l240 240v100q-19-8-39-12.5t-41-6.5v-41H480v-200H200v640h241q16 24 36 44.5T521-80H200Zm460-120q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM864-40 756-148q-21 14-45.5 21t-50.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T812-204L920-96l-56 56Z" />
+                        </svg>
+                        <div>Futures</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-down text-[#181A20] dark:text-white mr-5 mt-1">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <!--icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                        <path
+                            d="M720-240q25 0 42.5-17.5T780-300q0-25-17.5-42.5T720-360q-25 0-42.5 17.5T660-300q0 25 17.5 42.5T720-240Zm0 120q32 0 57-14t42-39q-20-16-45.5-23.5T720-204q-28 0-53.5 7.5T621-173q17 25 42 39t57 14Zm-520 0q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v268q-19-9-39-15.5t-41-9.5v-243H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Z" />
+                    </svg>
+                    <div>Earn</div>
+                </div>
+                <div class="flex justify-between py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] group">
+                    <div class="flex gap-2">
+                        <!--icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                            <path
+                                d="M480-160q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740v484q51-32 107-48t113-16q36 0 70.5 6t69.5 18v-480q15 5 29.5 10.5T898-752q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm80-200v-380l200-200v400L560-360Zm-160 65v-396q-33-14-68.5-21.5T260-720q-37 0-72 7t-68 21v397q35-13 69.5-19t70.5-6q36 0 70.5 6t69.5 19Zm0 0v-396 396Z" />
+                        </svg>
+                        <div>Square</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-down text-[#181A20] dark:text-white mr-5 mt-1">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="flex justify-between py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] group">
+                    <div class="flex gap-2">
+                        <!--icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                            <path
+                                d="M340-540H200q-33 0-56.5-23.5T120-620v-140q0-33 23.5-56.5T200-840h140q33 0 56.5 23.5T420-760v140q0 33-23.5 56.5T340-540Zm-140-80h140v-140H200v140Zm140 500H200q-33 0-56.5-23.5T120-200v-140q0-33 23.5-56.5T200-420h140q33 0 56.5 23.5T420-340v140q0 33-23.5 56.5T340-120Zm-140-80h140v-140H200v140Zm560-340H620q-33 0-56.5-23.5T540-620v-140q0-33 23.5-56.5T620-840h140q33 0 56.5 23.5T840-760v140q0 33-23.5 56.5T760-540Zm-140-80h140v-140H620v140Zm140 500H620q-33 0-56.5-23.5T540-200v-140q0-33 23.5-56.5T620-420h140q33 0 56.5 23.5T840-340v140q0 33-23.5 56.5T760-120Zm-140-80h140v-140H620v140ZM340-620Zm0 280Zm280-280Zm0 280Z" />
+                        </svg>
+                        <div>More</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-down text-[#181A20] dark:text-white mr-5 mt-1">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="flex justify-between py-4 pl-5 cursor-pointer">
+                    <div class="ml-[30px]">
+                        <!--icon-->
+                        <div>Theme</div>
+                    </div>
+                    <div class="flex mr-5 border border-slate-500 rounded-lg">
+                        <div class="sun3 py-[6px] px-[14px] m-[2px] rounded-l-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-sun text-[#848E9C] dark:text-white">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </div>
+                        <div class="moon3 py-[6px] px-[14px] m-[2px] rounded-r-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-moon text-[#848E9C]">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <!--icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#848E9C" class="group-hover:fill-[#181A20] dark:group-hover:fill-white">
+                        <path
+                            d="M480-800v-80h400v80H480Zm0 160v-80h400v80H480Zm0 160v-80h400v80H480ZM758-80q-125 0-247-54.5T289-289Q189-389 134.5-511T80-758q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T347-346q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T630-350l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM201-560l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM201-560Zm358 358Z" />
+                    </svg>
+                    <div>24/7 Chat Support</div>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <!--icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-download text-[#848E9C] group-hover:text-[#181A20] dark:group-hover:text-white">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <div>Download</div>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <!--icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-globe mt-[2px] text-[#848E9C] group-hover:text-[#181A20] dark:group-hover:text-white">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 
+                                15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <div>English(India)</div>
+                </div>
+                <div class="flex gap-2 py-4 pl-5 hover:bg-[#f2f2f2] dark:hover:bg-[#2B3139] cursor-pointer group">
+                    <!--icon-->
+                    <div class="rounded-full bg-[#848E9C] group-hover:bg-[#181A20] dark:group-hover:bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#202630" class="fill-white dark:fill-[#202630]">
+                            <path
+                                d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z" />
+                        </svg>
+                    </div>
+                    <div>USD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+        feather.replace();
+    </script>
+</body>
+
+</html>
